@@ -9,23 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppController = void 0;
+exports.AppControler = void 0;
 const common_1 = require("@nestjs/common");
-let AppController = class AppController {
-    constructor() { }
-    getHello() {
-        return "hello";
+let AppControler = class AppControler {
+    async getHello() {
+        return {
+            code: common_1.HttpStatus.OK,
+            type: "Success",
+            data: "Welcome to Shoes Shop"
+        };
     }
 };
-exports.AppController = AppController;
+exports.AppControler = AppControler;
 __decorate([
     (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", String)
-], AppController.prototype, "getHello", null);
-exports.AppController = AppController = __decorate([
-    (0, common_1.Controller)(),
-    __metadata("design:paramtypes", [])
-], AppController);
+    __metadata("design:returntype", Promise)
+], AppControler.prototype, "getHello", null);
+exports.AppControler = AppControler = __decorate([
+    (0, common_1.Controller)()
+], AppControler);
 //# sourceMappingURL=app.controller.js.map

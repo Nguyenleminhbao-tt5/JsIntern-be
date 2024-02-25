@@ -26,48 +26,22 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
-
-```bash
-$ yarn install
-```
+Backend: NestJs
+Database: Supabase
 
 ## Running the app
 
 ```bash
 # development
-$ yarn run start
+$ yarn install
+$ yarn  start:dev
 
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
 ```
 
-## Test
+## Link deploy
 
-```bash
-# unit tests
-$ yarn run test
+[Vercel](https://js-intern-be.vercel.app) : link deploy on vercel
 
-# e2e tests
-$ yarn run test:e2e
+## Link API documentation
 
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+[API documentation](https://documenter.getpostman.com/view/23216504/2sA2rCVMkz) : link API documentation

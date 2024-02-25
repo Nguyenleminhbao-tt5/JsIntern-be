@@ -1,12 +1,15 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, HttpStatus } from "@nestjs/common";
 
 
 @Controller()
-export class AppController {
-  constructor() {}
-
-  @Get()
-  getHello(): string {
-    return "hello";
-  }
+export class AppControler{
+    
+    @Get()
+    async getHello(){
+        return {
+            code: HttpStatus.OK,
+            type: "Success",
+            data: "Welcome to Shoes Shop"
+        }
+    }
 }

@@ -1,4 +1,8 @@
-export declare class AppController {
-    constructor();
-    getHello(): string;
+import { HttpStatus } from "@nestjs/common";
+export declare class AppControler {
+    getHello(): Promise<{
+        code: HttpStatus;
+        type: string;
+        data: string;
+    }>;
 }
